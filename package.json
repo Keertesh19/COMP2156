@@ -3,18 +3,37 @@
   "version": "1.0.0",
   "description": "#### Github Actions CI/CD integration added",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Warning: No tests created yet.\""
+  "dependencies": {
+    "gh-pages": "^2.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "travis": "^0.1.1",
+    "web-vitals": "^2.1.4",
+    "yarn": "^1.13.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Keertesh19/COMP2156.git"
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
+    "test": "echo \"Warning: No tests created yet.\"",
+    "eject": "react-scripts eject"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Keertesh19/COMP2156/issues"
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   },
-  "homepage": "https://github.com/Keertesh19/COMP2156#readme"
+  "homepage": "https://keertesh19.github.io/COMP2156"
 }
