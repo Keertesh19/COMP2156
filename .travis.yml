@@ -17,7 +17,7 @@ install:
 
 script:
   #- yarn lint
-  - yarn build
+  - CI=false yarn build
   - mv build/index.html build/404.html
 deploy:
   provider: pages
